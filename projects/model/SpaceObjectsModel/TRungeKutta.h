@@ -5,8 +5,8 @@
 class TRungeKutta : public TAbstractIntegrator
 {
 public:
-    TRungeKutta();
-    void OneStep(TVector vector);
+    TRungeKutta(double t0, double tk, double h);
+    TVector OneStep(TVector vector);
 };
 
 #endif // TRUNGEKUTTA_H

@@ -10,12 +10,12 @@ public:
     double t0;
     double tk;
     double h;
-    TAbstractIntegrator();
-    void SetRightParts(TDynamicModel dmodel);
-    void MoveTo(double point);
-    virtual void OneStep(TVector vector) = 0;
-private:
-    TDynamicModel RightParts;
+    double tcur;
+    TAbstractIntegrator(double t0, double tk, double h);
+    void SetRightParts(TDynamicModel* dmodel);
+    TVector MoveTo(double point, TVector vector);
+    virtual TVector OneStep(TVector vector) = 0;
+    TDynamicModel* RightParts;
 };
 
 #endif // TABSTRACTINTEGRATOR_H
