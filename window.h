@@ -8,6 +8,7 @@ class window : public QWidget
 
     public : window(int weight, int hight);
     private : QPushButton* But_plus;
+    private : QPushButton* But_play;
 
 
 
