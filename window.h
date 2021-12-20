@@ -7,6 +7,9 @@ class window : public QWidget
     Q_OBJECT
 
     public : window(int weight, int hight);
+    private : QPushButton* But_plus;
+
+
 
 };
 
