@@ -25,4 +25,28 @@ CreateSateliteWindow::CreateSateliteWindow() : QWidget()
        QLineEdit* lineVy = new QLineEdit(this);lineVy ->move(70,410);
        QLineEdit* lineVz = new QLineEdit(this);lineVz ->move(70,510);
 
+       linelx->resize(400,20);
+       linely->resize(400,20);
+       linelz->resize(400,20);
+       lineVx->resize(400,20);
+       lineVy->resize(400,20);
+       lineVz->resize(400,20);
+
+       linelx->show();
+       linely->show();
+       linelz->show();
+       lineVx->show();
+       lineVy->show();
+       lineVz->show();
+
+       QPushButton* OKBtn = new QPushButton("CREATE",this);
+       OKBtn->move(200,550);
+       OKBtn->show();
+       connect(OKBtn,&QPushButton :: clicked, this, &CreateSateliteWindow :: OKPushBtn);
+       connect(OKBtn,&QPushButton :: clicked, this, &CreateSateliteWindow :: close);
+
+}
+
+void CreateSateliteWindow :: OKPushBtn(){
+
 }

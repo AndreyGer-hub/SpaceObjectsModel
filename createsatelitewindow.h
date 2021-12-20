@@ -7,6 +7,7 @@ class CreateSateliteWindow : public QWidget
     Q_OBJECT
 
     public: CreateSateliteWindow();
+    private: void OKPushBtn();
 
 };
 
