@@ -5,6 +5,11 @@ project(SpaceObjectsModel LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+include_directories(
+    "./"
+    "../"
+)
+
 set(SOURCES
     TAbstractIntegrator.cpp
     TAbstractIntegrator.h
@@ -20,4 +25,4 @@ set(SOURCES
     TRungeKutta.h
 )
 
-add_executable(SpaceObjectsModel main.cpp)
+add_executable(SpaceObjectsModel main.cpp ${SOURCES})

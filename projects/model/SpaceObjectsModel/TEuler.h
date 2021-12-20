@@ -5,8 +5,8 @@
 class TEuler : public TAbstractIntegrator
 {
 public:
-    TEuler();
-    void OneStep(TVector vector);
+    TEuler(double t0, double tk, double h);
+    TVector OneStep(TVector vector);
 };
 
 #endif // TEULER_H
