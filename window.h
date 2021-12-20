@@ -2,6 +2,7 @@
 #define WINDOW_H
 #include <QtWidgets>
 #include <createsatelitewindow.h>
+#include <controller.h>
 
 class window : public QWidget
 {
@@ -12,8 +13,7 @@ class window : public QWidget
     private : void ButtonPlay();
     private : QPushButton* But_plus;
     private : QPushButton* But_play;
-
-
+    public : Controller* cntrl;
 
 };
 

@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     TVector.cpp \
+    controller.cpp \
     createsatelitewindow.cpp \
     main.cpp \
     window.cpp
@@ -24,6 +25,7 @@ SOURCES += \
 
 HEADERS += \
     TVector.h \
+    controller.h \
     createsatelitewindow.h \
     window.h
     TVector.h

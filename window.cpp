@@ -1,15 +1,16 @@
 #include "window.h"
 
-
 window::window(int weight, int hight): QWidget()
 {
 
+        cntrl = new Controller;
         resize(weight, hight);
         setWindowTitle("SUPER PROGRAM GOLOVESHKIN GERASIMOV MAKSIMOV VINOKUROV KASHAPOV SATELITE MODEL");
         But_plus = new QPushButton("+",this);
         But_plus->resize(100,100);
         But_plus->move(100,650);
         But_plus->show();
+
 
         connect(But_plus,&QPushButton :: clicked, this, &window :: ButtonAddSatelite);
 
@@ -23,10 +24,15 @@ window::window(int weight, int hight): QWidget()
 }
 
 void window::ButtonAddSatelite(){
-    CreateSateliteWindow* helpwindow = new CreateSateliteWindow();
+    TVector* vec = new TVector;
+    cntrl->newVector(vec);
+    CreateSateliteWindow* helpwindow = new CreateSateliteWindow(vec);
     helpwindow->resize(500,600);
     helpwindow->show();
     helpwindow->setWindowTitle("Add Satelite");
+
+    //cout<<"hui = "<<cntrl->VecCounter;
+
 }
 
 void window :: ButtonPlay(){

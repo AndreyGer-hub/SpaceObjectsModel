@@ -1,10 +1,10 @@
 #include "createsatelitewindow.h"
 
-#include <iostream>
-using namespace std;
-
-CreateSateliteWindow::CreateSateliteWindow() : QWidget()
+CreateSateliteWindow::CreateSateliteWindow(TVector* vec) : QWidget()
 {
+
+       satelite = vec;
+
        resize(500,600);
        labelx = new QLabel("X0 = ",this);labelx->move(20,10);
        labely = new QLabel("Y0 = ",this);labely->move(20,110);
@@ -53,7 +53,9 @@ CreateSateliteWindow::CreateSateliteWindow() : QWidget()
 }
 
 void CreateSateliteWindow :: OKPushBtn(){
-    TVector* satelite = new TVector();
+
+
+
     QString buf;
 
     buf=linelx->text();
@@ -73,5 +75,4 @@ void CreateSateliteWindow :: OKPushBtn(){
 
     buf=lineVz->text();
     satelite -> Vz = (double)buf.toFloat();
-
 }

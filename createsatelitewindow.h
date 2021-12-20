@@ -7,7 +7,8 @@ class CreateSateliteWindow : public QWidget
 {
     Q_OBJECT
 
-    public: CreateSateliteWindow();
+    public: CreateSateliteWindow(TVector* vec);
+    TVector* satelite;
     private: void OKPushBtn();
     private:
     QLabel* labelx ;
