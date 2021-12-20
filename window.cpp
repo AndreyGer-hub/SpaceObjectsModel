@@ -18,6 +18,8 @@ window::window(int weight, int hight): QWidget()
         But_play->move(250,650);
         But_play->show();
 
+        connect(But_play,&QPushButton :: clicked, this, &window :: ButtonPlay);
+
 }
 
 void window::ButtonAddSatelite(){
@@ -25,4 +27,8 @@ void window::ButtonAddSatelite(){
     helpwindow->resize(500,600);
     helpwindow->show();
     helpwindow->setWindowTitle("Add Satelite");
+}
+
+void window :: void ButtonPlay(){
+
 }
