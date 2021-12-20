@@ -1,6 +1,7 @@
 #ifndef CREATESATELITEWINDOW_H
 #define CREATESATELITEWINDOW_H
 #include <QtWidgets>
+#include "TVector.h"
 
 class CreateSateliteWindow : public QWidget
 {
@@ -8,6 +9,20 @@ class CreateSateliteWindow : public QWidget
 
     public: CreateSateliteWindow();
     private: void OKPushBtn();
+    private:
+    QLabel* labelx ;
+    QLabel* labely ;
+    QLabel* labelz ;
+    QLabel* labelVx;
+    QLabel* labelVy;
+    QLabel* labelVz;
+
+    QLineEdit* linelx ;
+    QLineEdit* linely ;
+    QLineEdit* linelz ;
+    QLineEdit* lineVx ;
+    QLineEdit* lineVy ;
+    QLineEdit* lineVz ;
 
 };
 
