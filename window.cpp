@@ -29,6 +29,6 @@ void window::ButtonAddSatelite(){
     helpwindow->setWindowTitle("Add Satelite");
 }
 
-void window :: void ButtonPlay(){
+void window :: ButtonPlay(){
 
 }
