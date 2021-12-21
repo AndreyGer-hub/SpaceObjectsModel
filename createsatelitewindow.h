@@ -1,7 +1,7 @@
 #ifndef CREATESATELITEWINDOW_H
 #define CREATESATELITEWINDOW_H
 #include <QtWidgets>
-#include "TVector.h"
+#include <modules/TVector.h>
 
 class CreateSateliteWindow : public QWidget
 {

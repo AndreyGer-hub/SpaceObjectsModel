@@ -16,31 +16,27 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    TVector.cpp \
     controller.cpp \
     createsatelitewindow.cpp \
     main.cpp \
-    window.cpp
-    TVector.cpp
-    modules/TAbstractIntegrator.cpp
-    modules/TAbstractIntegrator.h
-    modules/TDynamicModel.cpp
-    modules/TDynamicModel.h
-    modules/TSpaceCraft.cpp
-    modules/TSpaceCraft.h
-    modules/TVector.cpp
-    modules/TVector.h
-    modules/TEuler.cpp
-    modules/TEuler.h
+    window.cpp \
+    modules/TAbstractIntegrator.cpp \
+    modules/TDynamicModel.cpp \
+    modules/TSpaceCraft.cpp \
+    modules/TVector.cpp \
+    modules/TEuler.cpp \
     modules/TRungeKutta.cpp
-    modules/TRungeKutta.h
 
 HEADERS += \
-    TVector.h \
     controller.h \
     createsatelitewindow.h \
-    window.h
-    TVector.h
+    window.h \
+    modules/TAbstractIntegrator.h \
+    modules/TDynamicModel.h \
+    modules/TSpaceCraft.h \
+    modules/TVector.h \
+    modules/TEuler.h \
+    modules/TRungeKutta.h
 
 FORMS +=
 
