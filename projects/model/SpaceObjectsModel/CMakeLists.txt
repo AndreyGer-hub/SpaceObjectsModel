@@ -8,21 +8,22 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include_directories(
     "./"
     "../"
+    "../../../modules/"
 )
 
 set(SOURCES
-    TAbstractIntegrator.cpp
-    TAbstractIntegrator.h
-    TDynamicModel.cpp
-    TDynamicModel.h
-    TSpaceCraft.cpp
-    TSpaceCraft.h
-    TVector.cpp
-    TVector.h
-    TEuler.cpp
-    TEuler.h
-    TRungeKutta.cpp
-    TRungeKutta.h
+    ../../../modules/TAbstractIntegrator.cpp
+    ../../../modules/TAbstractIntegrator.h
+    ../../../modules/TDynamicModel.cpp
+    ../../../modules/TDynamicModel.h
+    ../../../modules/TSpaceCraft.cpp
+    ../../../modules/TSpaceCraft.h
+    ../../../modules/TVector.cpp
+    ../../../modules/TVector.h
+    ../../../modules/TEuler.cpp
+    ../../../modules/TEuler.h
+    ../../../modules/TRungeKutta.cpp
+    ../../../modules/TRungeKutta.h
 )
 
 add_executable(SpaceObjectsModel main.cpp ${SOURCES})

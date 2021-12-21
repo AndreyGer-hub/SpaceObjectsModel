@@ -22,6 +22,18 @@ SOURCES += \
     main.cpp \
     window.cpp
     TVector.cpp
+    modules/TAbstractIntegrator.cpp
+    modules/TAbstractIntegrator.h
+    modules/TDynamicModel.cpp
+    modules/TDynamicModel.h
+    modules/TSpaceCraft.cpp
+    modules/TSpaceCraft.h
+    modules/TVector.cpp
+    modules/TVector.h
+    modules/TEuler.cpp
+    modules/TEuler.h
+    modules/TRungeKutta.cpp
+    modules/TRungeKutta.h
 
 HEADERS += \
     TVector.h \
